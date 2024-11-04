@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CMSArticle.ModelLayer
 {
-    public class Admin
+    public class Admin:BaseEntity
     {
         [Key]
         public int AdminId { get; set; }

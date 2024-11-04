@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CMSArticle.ModelLayer
 {
-    public class Article
+    public class Article:BaseEntity
     {
         [Key]
         public int ArticleId { get; set; }
