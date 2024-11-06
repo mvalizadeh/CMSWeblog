@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CMSArticle.RepositoryLayer
+namespace CMSArticle.ServiceLayer
 {
-    public interface ICommentRepository:IGenericRepository<Comment>
+    public interface IEntityService<T> where T : BaseEntity
     {
     }
 }

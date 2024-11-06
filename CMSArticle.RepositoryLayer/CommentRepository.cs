@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CMSArticle.RepositoryLayer
 {
-    internal class CommentRepository : GenericRepository<Comment>, ICommentRepository
+    public class CommentRepository : GenericRepository<Comment>, ICommentRepository
     {
         public CommentRepository(CMSContext context) : base(context)
         {

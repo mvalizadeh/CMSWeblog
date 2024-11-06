@@ -6,11 +6,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CMSArticle.RepositoryLayer
+namespace CMSArticle.ServiceLayer
 {
-    public class ArticleRepository : GenericRepository<Article>, IArticleRepository
+    public class CommentService : EntityService<Comment>, ICommentService
     {
-        public ArticleRepository(CMSContext context) : base(context)
+        public CommentService(CMSContext context) : base(context)
         {
         }
     }

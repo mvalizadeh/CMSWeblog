@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CMSArticle.RepositoryLayer
 {
-    internal class AdminRepository : GenericRepository<Admin>, IAdminRepository
+    public class AdminRepository : GenericRepository<Admin>, IAdminRepository
     {
         public AdminRepository(CMSContext context) : base(context)
         {

@@ -1,16 +1,17 @@
 ﻿using CMSArticle.ModelLayer;
 using CMSArticle.ModelLayer.Context;
+using CMSArticle.RepositoryLayer;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CMSArticle.RepositoryLayer
+namespace CMSArticle.ServiceLayer
 {
-    public class ArticleRepository : GenericRepository<Article>, IArticleRepository
+    public class EntityService<T> : GenericRepository<T> where T : BaseEntity
     {
-        public ArticleRepository(CMSContext context) : base(context)
+        public EntityService(CMSContext context) : base(context)
         {
         }
     }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CMSArticle.RepositoryLayer
 {
-    internal class CategoryRepository : GenericRepository<Category>, ICategoryRepository
+    public class CategoryRepository : GenericRepository<Category>, ICategoryRepository
     {
         public CategoryRepository(CMSContext context) : base(context)
         {

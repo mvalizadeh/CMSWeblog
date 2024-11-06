@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CMSArticle.RepositoryLayer
 {
-    internal interface IArticleRepository:IGenericRepository<Article>
+    public interface IArticleRepository:IGenericRepository<Article>
     {
     }
 }
